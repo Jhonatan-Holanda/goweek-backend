@@ -32,4 +32,4 @@ app.use('/files', express.static(path.resolve(__dirname, '..', 'tmp')));
 
 app.use(require('./routes.js'))
 
-server.listen(4000);
+server.listen(process.env.PORT || 4000);
